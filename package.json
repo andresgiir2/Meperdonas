@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node dist/shopping/server/server.mjs",
+    "build": "ng build && ng run shopping:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:Shopping": "node dist/shopping/server/server.mjs"

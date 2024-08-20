@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "dist/shopping/server/server.mjs", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/dist/shopping/server/server.mjs" }
+    ]
+  }
